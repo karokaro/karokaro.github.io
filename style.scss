@@ -1,98 +1,130 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
+@import "_reset"; 
+ 
 body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-body {
-    section {
-        font-family: 'Arial';
-        header { 
+    section { 
+        .header { 
             position: relative;
             margin-bottom: 40px;
             img {
-                height: 410px;
+                height: 413px;
                 width: 100%;
+                 @media (min-width: 1200px) {
+                    max-width: 100%;
+                    height: auto;
+                 }
             }
             h1 {
+                font-family: 'Lato', sans-serif; 
+                font-weight: 700;
                 position: absolute;
                 top: 20%;
-                font-size: 29px;
-                font-weight: bold;
+                font-size: 34px;
                 text-align: center;
-                width: 69%;
-                margin-left: 14%;
-            }
-            .slide {
-                width: 70%;
-                margin: auto;
-                ul {
-                    position: absolute;
-                    top: 50%;
-                    li {
-                        margin-bottom: 17%;
-                        .first {
-                            text-decoration: none;
-                            font-size: 18px;
-                            color: #FFF;
-                            background: #A81E1E;
-                            padding: 3% 28%;
+                left: 0;
+                right: 6%;
+                padding: 0 20px;
+                @media (min-width: 760px) {
+                    font-size: 68px;
+                    top: 7%;
+                }
+                @media (min-width: 1000px) {
+                    top: 15%;
+                }
+            }  
+            ul {
+                position: absolute;
+                bottom: 7%;
+                left: 0;
+                right: 6%;
+                margin: 0 auto;
+                @media (min-width: 760px) {
+                    width: 760px;
+                    left: 1.7%;
+                }
+                @media (min-width: 1200px) {
+                    width: 1075px;
+                    left: 15%;
+                    bottom: 14%;
+                }
+                li {
+                    a {
+                        display: block;
+                        width: 231px;
+                        height: 39px;
+                        margin: 20px auto;
+                        border: 1px solid transparent;
+                        @media (min-width: 760px) {
+                            margin-top: 0;
+                            float: left;
+                            margin-right: 18px;
                         }
-                        .second {
-                            text-decoration: none;
-                            font-size: 19px;
-                            background: #83C6F7;
-                            color: #FFF;
-                            opacity: 0.6; 
-                            padding: 3% 2px;
+                        @media (min-width: 1200px) {
+                            margin-right: 125px;
                         }
-                        .third {
-                            text-decoration: none;
-                            font-size: 18px;
-                            color: #F2F2F2;
-                            background: #688250;
-                            padding: 3% 29.5%;
+                        &:after {
+                            content: " ";
+                            width: 81px;
+                            height: 80px;
+                            display: block;
+                            position: absolute;
+                        }
+                        &.first {
+                            background: url(images/typo.png) no-repeat;
+                            @media (min-width: 760px) {
+                                &:after {
+                                    background: url(images/typo-icon.png) no-repeat;
+                                    top: -78px;
+                                    left: 74px;
+                                }
+                            }
+                            @media (min-width: 1200px) {
+                                &:after {
+                                    top: -20px;
+                                    left: -80px;
+                                }
+                                
+                            }
+                        }
+                        &.second {
+                            background: url(images/rwd.png) no-repeat;
+                            @media (min-width: 760px) {
+                                &:after {
+                                    background: url(images/rwd-icon.png) no-repeat;
+                                    top: -78px;
+                                    left: 320px;
+                                }
+                            }
+                            @media (min-width: 1200px) {
+                                &:after {
+                                    top: -20px;
+                                    left: 279px;
+                                }  
+                            }
+                        }
+                        &.third {
+                            background: url(images/ux.png) no-repeat;
+                            @media (min-width: 760px) {
+                                &:after {
+                                    background: url(images/ux-icon.png) no-repeat;
+                                    top: -78px;
+                                    left: 570px;
+                                }
+                            } 
+                            @media (min-width: 1200px) {
+                                &:after {
+                                    top: -20px;
+                                    left: 637px;
+                                }  
+                            }
+                        }
+                        &:hover {
+                            border: 1px solid #fff;
                         }
                     }
+                    
                 }
             }
+            
         }
     }
 }
