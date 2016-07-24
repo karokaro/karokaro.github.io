@@ -1,23 +1,95 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Chilid-test</title>
-		<link rel="stylesheet" href="style.css">
-		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+		<title>Resume</title>
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href="stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+		<!--[if IE]>
+		  <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<script src="https://use.typekit.net/jfn0lsn.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
-	<body>
-		<section>
-			<header class="header">
-				<img src="images/bg.jpg" alt="background-img">
-				<h1>Feel the Power of Typography</h1>
+<body>
+	<section class="b-wrapper">
+		<div class="topbar">
+			<div class="topbar-container">
 				<ul>
-					<li><a class="first" href="#"></a></li>
-					<li><a class="second" href="#"></a></li>
-					<li><a class="third" href="#"></a></li>
+					<li class="item">
+						<a href="#aboutme-section" title="About">
+							<i class="icon-user"></i>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#skills-section" title="Skills">
+							<i class="icon-skills"></i>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#edu-section" title="Education">
+							<i class="icon-education"></i>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#contact-section" title="Contact">
+							<i class="icon-contact"></i>
+						</a>
+					</li>
 				</ul>
-			</header>
-		</section>
-	</body>
+			</div>
+		</div>
+		<header class="header">
+			<h1>Hello people,</br> I'm Karolina Drazewska, </br>an Experienced Front-end developer.</h1>
+			<p class="header-note">I'm passionate about quality code, best practices and performance.</p>
+		</header><!-- /header -->
+		<main class="main">
+			<div id="aboutme-section" class="main-box clearfix">
+				<i class="icon-user"></i>
+				<h3>About me</h3>
+				<p class="note">A high level of communication and motivation, quick to learn, have an excellent level of attention to detail.
+				On my free time I enjoy sharing my knowledge and I teach my brothers how to create a websites</p>
+			</div>
+			<span class="sep-line"></span>
+			<div id="skills-section" class="main-box clearfix">
+				<i class="icon-skills"></i>
+				<h3>My skills</h3>
+				<div class="box-wrapper">
+					<ul>
+						<li class="skills-row"><span class="category strong">CSS & HTML</span> Mobile first approach, SASS / SCSS, Atomic Design</li>
+						<li class="skills-row"><span class="category">Responsive Web Design</span></li>
+						<li class="skills-row"><span class="category strong">Javascript</span> (jQuery, work automation with grunt/gulp, OOP)</li>
+						<li class="skills-row">Progressive enhancement, graceful degradation</li>
+						<li class="skills-row"><span class="category">Tools</span> (git/svn, git tortoise/svn tortoise, Jira (tempo, boards kanban/scrum, estimation, photoshop, sublimetext editor)</li>
+					</ul>
+				</div>
+			</div>
+			<span class="sep-line"></span>
+			<div id="edu-section" class="main-box clearfix">
+				<i class="icon-education"></i>
+				<h3>Education</h3>
+				<div class="box-wrapper">
+					<dl>
+						<dt><dfn>2011 – 2013</dfn></dt>
+						<dd>University of Silesia, Katowice, Master in environmental protection</dd>
+						<dt><dfn>2008 - 2011</dfn></dt>
+						<dd>University of Silesia, Katowice, Bachelor's degree in biology</dd>
+					</dl>
+				</div>
+			</div>
+			<span class="sep-line"></span>
+			<div id="contact-section" class="main-box clearfix">
+				<i class="icon-contact"></i>
+				<h3>Contact me</h3>
+				<div class="box-wrapper">
+				<p>You can reach me for an inquiry or just to say "Hello" at <a class="mail" href="mailto:drazewska.karolina@gmail.com?subject=feedback">drazewska.karolina@gmail.com</a></p>
+				<p>For more about me, I'm also on <a class="linkedin" href="https://pl.linkedin.com/in/karolina-dr%C4%85%C5%BCewska-228358b2">LinkedIn</a></p>
+				</div>
+			</div>
+		</main>
+	</section>
+  
+</body>
+
 </html>

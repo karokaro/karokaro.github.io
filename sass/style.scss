@@ -1,0 +1,180 @@
+@import "../_reset";
+@import "_base";
+@import "_colors";
+@import "_typography";
+
+body {
+	font-family: "proxima-nova", serif;
+	font-size: 15px;
+	color: $cl-white;
+	line-height: 20px;
+	a {
+		text-decoration: none;
+		color: $cl-grey3;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.b-wrapper {
+		max-width: 1000px;
+		h1, h2 {
+			font-size: 28px;
+			line-height: 35px;
+			padding-bottom: 15px;
+			font-family: "proxima-nova";
+			font-weight: 800;
+			color: #263238;
+			@media (min-width: 720px) {
+				font-size: 35px;
+			}
+			@media (min-width: 1000px) {
+				font-size: 70px;
+				line-height: 80px;
+			}
+		}
+		h2 {
+			font-size: 20px;
+			line-height: 25px;
+			font-weight: 500;
+			@media (min-width: 720px) {
+				font-size: 30px;
+				line-height: 35px;
+			}
+			@media (min-width: 1000px) {
+				font-size: 70px;
+				line-height: 80px;
+			}
+		}
+		h3 {
+			padding: 13px 0;
+			font-size: 18px;
+			text-transform: uppercase;
+			@media (min-width: 720px) {
+				font-size: 35px;
+				line-height: 27px;
+			}
+		}
+		.topbar {
+			background: #263238;
+			position: fixed;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    z-index: 10000;
+		    .topbar-container {
+		    	padding-right: 15px;
+			    padding-left: 15px;
+			    margin-right: auto;
+			    margin-left: auto;
+		    }
+		}
+		.header {
+			background: #fff;
+			display: table-cell;
+    		vertical-align: middle;
+    		padding: 90px 20px 40px;
+    		@media (min-width: 720px) {
+				padding: 150px 20px 100px;
+			}
+			.header-note {
+				color: #263238;
+				font-size: 20px;
+				padding-top: 20px;
+				line-height: 25px;
+				@media (min-width: 720px) {
+					font-size: 30px;
+					line-height: 35px;
+				}
+				@media (min-width: 1000px) {
+					font-size: 70px;
+					line-height: 80px;
+				}
+			}
+		}
+		.icon-user {
+			background: url(../images/i-user.png) no-repeat;
+		}
+		.icon-contact {
+			background: url(../images/i-contact.png) no-repeat;
+		}
+		.icon-skills {
+			background: url(../images/i-skills.png) no-repeat;
+		}
+		.icon-education {
+			background: url(../images/i-edu.png) no-repeat;
+		}
+		[class^="icon-"] { 
+			background-size: 50px;
+			width: 35px;
+			height: 50px;
+			display: block;
+			float: left;
+			margin-right: 10px;
+			@media (min-width: 720px) {
+				background-size: 70px;
+				width: 70px;
+				height: 70px;
+			}
+		}
+		.main {
+			padding: 20px;
+			color: $cl-black;
+		}
+		.main {
+			.main-box {
+				@media (min-width: 720px) {
+					font-size: 18px;
+					line-height: 28px;
+				}
+				[class^="icon-"] { 
+					background-size: 50px;
+					width: 53px;
+					height: 53px;
+					display: block;
+					float: left;
+					margin-right: 10px;
+				}
+				.note, 
+				.box-wrapper {
+					padding-top: 20px;
+					line-height: 30px;
+					font-size: 20px;
+					a {
+						display: block;
+					}
+					a, p {
+						margin-bottom: 10px;
+					}
+					.mail,
+					.linkedin {
+						font-weight: 800;
+					}
+					.category {
+						font-size: 20px;
+						@media (min-width: 720px) {
+							font-size: 28px;
+						}
+						&.strong {
+							font-weight: 800;
+						}
+					}
+					.skills-row {
+						margin-bottom: 20px;
+						@media (min-width: 720px) {
+							margin-bottom: 15px;
+						}
+					}
+				}
+			}
+			.sep-line {
+				background-color: #90a4ae;
+				height: 1px;
+				width: 100%;
+				margin: 40px 0 30px;
+				display: block;
+			}
+		}
+		
+	}
+}
+
