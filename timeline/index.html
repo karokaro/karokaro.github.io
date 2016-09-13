@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pl-PL">
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+		<title>Vue.js</title>
+		<link href="common/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="common/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+		<!--[if IE]>
+		  <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="myApp">
+			<header>
+				<h1>{{ output }}</h1>
+			</header><!-- /header -->
+			<section class="container">
+				<div class="b-timeline clearfix" v-for="item in items">
+					<newitem :title="item.title" :description="item.description" :url="item.url" :date="item.date"></newitem>
+				</div>
+			</section>
+			<template id="item-template">
+				<div class="b-timeline_img">
+					<img src="img/girl.png" alt="Picture">
+				</div> <!-- b-timeline_img -->
+				<div class="b-timeline_content clearfix2">
+					<h2>{{ title }}</h2>
+					<p>{{{ description }}}</p>
+					<a href="{{ url }}" class="read-more">Read more</a>
+					<span class="date">{{ date }}</span>
+				</div> <!-- b-timeline_content -->
+			</template>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js" charset="utf-8"></script>
+		<script>
+			Vue.component('newitem', {
+				template: '#item-template',
+				props: ['title','description','url', 'date']
+			});
+			var vm = new Vue ({
+				el: "#myApp",
+				data: {
+					output: "Timeline - Kornelia",
+					items: [{
+						title: "Roczek! Dzisiaj w nocy o 00:30 skończone 12 miesięcy!",
+						description: "Mama Karolina: Dokładnie rok temu, o tej porze leżałam na szpitalnym łóżku i patrzyłam na moją malutką córeczkę. Pamiętam jakby to było wczoraj.. Nie sądziłam wtedy, że można mieć w sobie takie pokłady miłości i tak kochać małą istotkę. Dzisiaj, wiem, że można. Kocham z każdą godziną, dniem i jej uśmiechem, przyulaskiem, buziaczkiem mocniej i mocniej!<br><br>Kornelia:<br>Dzisiaj moje pierwsze urodzinki!!!!<br>Mam 6 ząbków i 3 w 'natarciu'. Stąd też moje (ostatnio częste) śpiewy indiańskie 'aaaajj jjjaaaj jjjaaajj' - tylko Wy mi możecie pomóc to przetrwać, dlatego Was nawołuję. No a mama to lekarstwo na wszystko!<br>Coraz lepiej ogarniam nocnik. Mówię bam, am, tam, mama, tata. Wołam pieska i ptaszki cmokaniem. I jak słyszę szczekanie psa to naśladuję go swoim 'aaał' :) <br>Uwielbiam kamyczki, plac zabaw i bańki mydlane! <br><br>Do zobaczenia na imprezie urodzinowej! <br>Buziaki! :*",
+						url: "/",
+						date: "18 Sierpień 2016"
+					}, {
+						title: "ZĘBY !!!!",
+						description: "Mama Karolina:<br>Muszę jeszcze o tym napisać! Nadrabiam nadrabiam :)<br>W niedzielę 31.07.16. pierwszy raz zobaczyłam i poczułam dwójkę na dole po prawej Twojej stronie. Przewróciłaś się i przycięłaś sobie język, poleciała krewka i mama zaglądała i studiowała Twoją buzię - gdyby nie upadek to pewnie bym go nie zauważyła..<br>Już tak od 2-3tyg wybijają się górne zębole.. widać 4 na raz! Czuć już jedynkę po prawej stronie, lewa jedynka też już ostra i prawa dwójka też się przebiła.. Dużo się ślinisz, zajadasz palce.. Męczą Cię strasznie te zęby, marudna jesteś.. ale też bardzo dzielna! Musimy przetrzymać :* Jak nie było ząbków to nie było, a teraz rosną jak grzyby po deszczu :) <br><br>Kocham Cię córeczko!<br><br>Idę spać :) <br>P.S.1 Jeszcze nie było pobudki na mleczko :) Smacznie śpisz w łóżeczku!<br>P.S.2 Już niedługo będziesz miała ROCZEK! Łłłłłaaaaaa :*",
+						url: "/",
+						date: "02 sierpień 2016"
+					}, {
+						title: "11 miesięcy!",
+						description: "Jeszcze miesiąc i będą moje pierwsze urodzinki! Już nie mogę się doczekać! Mama obiecała mi, że będą balony i przyjadą osoby, które bardzo mnie kochają. Czego nauczyłam się w ciągu ostatniego miesiąca? - Chodzę! Bujam się na boczki i robię coraz większe dystanse. Czytam książki mówiąc 'dudududu', potrafię naśladować odgłosy jeżdżącego autka 'brrrrr', robię 'tititi' chwytając za palce u stopy, robię 'papa', brawo, wołam 'mama', 'tata'. Często próbuję naśladować rodziców. Uczę się schodzić z łóżka - jeszcze trochę i opanuję tę sztukę do perfekcji!Mam dłuższe i gęściejsze włoski - spinki można wpinać i mama robi mi kucyka-antenkę!Uczę się jeść łyżeczką, najlepsze są dania ze słoików, może kiedyś przekonam się do kuchni mamy.. Zaczynam przygodę z nocnikiem. Dziwne to narzędzie, jak zrobię do niego siku to rodzice się cieszą, a nawet biją brawo.. :) Dalej mam dwa ząbki, ale bolą mnie dziąsełka i pewnie niedługo wyjdą następne.. Uwielbiam spacery! A ostatnio najbardziej podoba mi się zabawa w piaskownicy! Każdej minuty, z godziny na godzinę, dzień po dniu uczę się czegoś nowego. Dziękuję, że jesteście i pomagacie mi odnaleźć się na tym świecie!.",
+						url: "/",
+						date: "18 Lipiec 2016"
+					}, {
+						title: "Już 10 miesięcy jestem z Wami!",
+						description: "Naprawdę ten czas szybko upływa! Czasami wstaję wcześniej (tak o 6) aby dzień był dłuższy, a przede wszystkim, aby być dłużej z tatą przed jego pracą! Czasami przesypiam całe noce, ale częściej wolę jednak wołać mamę i poprzytulać się do niej. Mam za sobą pierwsze wakacje z rodzicami! Byliśmy w Dębkach nad polskim morzem i było super! Była z nami ciocia Kasia, wujek Tomek i Szymonek. Fajnie się razem bawiliśmy! Morze jest ogromne! Początkowo mnie przerażało, ale potem lubiłam moczyć w nim stópki i obserwować fale. Grałam też w freezby, bawiłam się piachem, spacerowałam, zajadałam drożdżówki, gofry i wafle z lodów (gdyby nie wakacje mama na pewno nie dała by mi ich zjeść!), huśtałam się na hamaku i spędzałam całe dnie na dworze! Dalej doskonale chodzenie - teraz umiem poruszać się trzymając za jedną rękę, ale dalej stawiam niepewnie kroczki. Lubię powtarzać co robi mama i tata. Obserwuję ich bacznie! Biję brawo, robię papa, mniam mniam, daję buziaki, mlaszczę jak chcę jeść lub pić, wiem gdzie są drzwi do wychodzenia na dwór i jak mamy iść na spacer to czekam przy nich :) Lubię klepać rodziców po brzuszku, zaglądać do szafek i wyciągać z nich rzeczy. 'Czytanie' też lubię, dlatego często ściągam książki z półki :) a i chętnie zaopiekuję się każdym portfelem, tam jest tyle ciekawych kart i kieszonek! Ważę 10kg, mam 2 zęby i 77cm wzrostu. Ściskam Was mocno!",
+						url: "/",
+						date: "18 Czerwiec 2016"
+					}, {
+						title: "Skończyłam kolejny miesiąc! ",
+						description: "Przemieszczam się sprawnie po całym domu na czworaka, a na nóżkach przy meblach lub jak będziecie trzymać mnie za rączki :) Super jest robić tupu tupu! Nadal mam dwa ząbki, ale gryzę palce bo bolą mnie dziąsełka, może kolejny/kolejne ząbki wyjdą za niedługo. No i za mną pierwsza choroba i gorączka. 'Rozgadałam' się ostatnio.. ćwiczę dadadada mamama tatata bababa tititi a i czasami popiszczę trochę :) Daję buziaki, przytulam misie, robię brawo, papapa i tu tu tu sroczka kaszkę ważyła. Uwielbiam tańcować do muzyki! Tata ma dobry gust i zawsze się z nim pobujam :) Nie wiedziałam, że liście, trawa i kwiatki są takie fajne! Tylko rodzice nie pozwalają mi ich jeść... ale przynajmniej pozrywam ich trochę będąc na spacerze. Lubię też plac zabaw. Tam są dzieci i huśtawki! A i piłki są super! tak się kręcą i można je gonić! Lubię też spędzać czas bawiąc się przy zmywarce i balkonie ;) Mama zrobiła mi dziś kilka zdjęć. <br><br> Dziękuję, że pomagacie mi poznawać ten świat i przystosować się do niego.<br><br>Ściskam Was mocno!<br>Buziaki!<br>Nela <br>P.S. Może następnym razem mama ułoży mi jakoś te włosy (chociaż do zdjęcia) :)",
+						url: "/",
+						date: "18 Maj 2016"
+					}, {
+						title: "I kolejny miesiąc za nami!",
+						description: "Dzisiaj w nocy skończyłam 8 miesięcy!<br>Ten świat bardzo mnie ciekawi! Szczególnie interesują mnie dzieci, ptaszki i pieski ;) lubię też jak ludzie się do mnie uśmiechają i mnie zaczepiają :) wczoraj w kościele nawet zakolegowałam się ze starszym ode mnie chłopczykiem :) dawałam mu cześć i uśmiechałam się do niego a on do mnie! Jego mama miała fajną kurtkę z kokardka i poczęstowała mnie chrupkiem! Był pyszny!<br>Dalej mam dwa dolne ząbki, raczkuję po całym domu i nauczyłam się wstawać i stać w łóżeczku, przy łożku w sypialni i w salonie, przy kuchence, lodówce, krzesełku, pudełku, odkurzaczu i przy nogach mamy. Wszędzie próbuję! A ostatnio dużo się ślinię i robię pppprrrrr! Mi się podoba, ale rodzicom chyba nie bardzo.. I mam cały czas mokrą brodę ;)<br><br>Ściskam Was mocno! Przesyłam buziaki i uśmiechy!<br>:* :)",
+						url: "/",
+						date: "18 Kwiecień 2016"
+					}, {
+						title: "Roczek Stasia",
+						description: "Cześć córeczko! <br><br>Mama wreszcie pisze.. Zabierałam się do tego maila cały tydzień!<br>03.04.2016 byliśmy na Roczku Stasia :) Była piękna, słoneczna pogoda. Zaskoczyłaś nas bardzo, bo interesują Cię inni ludzie i dzieci. Już się nie boisz jak kiedyś, i nie płaczesz na widok mniej znanej lub nieznanej twarzy. Czasami jesteś wycofana, ale przełamujesz strach po pewnym czasie. Wracając do roczku, byłaś bardzo grzeczna! Siedziałaś na swoim krzesełku do karmienia przy stole, bawiłaś się zabawkami i huśtałaś się na huśtawce ;) <br>Nie spałaś przez całą imprezę, padłaś dopiero w samochodzie jak wracaliśmy do domu.<br><br>Na roczek kupiliśmy książeczkę sensoryczną (Tobie też zakupiłam wersję dziewczęcą :))<br><br>Ściskam Cię mocno! :*<br>Kocham!​​<br>M.",
+						url: "/",
+						date: "10 Kwiecień 2016"
+					}, {
+						title: "Kończymy 7 miesięcy! :)",
+						description: "Mam jednego ząbka, no tak prawie bo widać go dopiero na dziąsełku. Nauczyłam się sama siadać i teraz już na brzuchu nie leżę, tylko siedzę bo tak mi się to podoba. Próbuję raczkować, ale cały czas udaje się tylko do tylu. I jem dużo! Cały czas mogłabym mieć coś w buzi i wszystko co daje mi mama jest pycha! A i jeżdżę już w spacerówce, gondola ze mną była za ciężka już dla mamy, a teraz dajemy radę :)<br><br>Miłego dnia! Buziaki!",
+						url: "/",
+						date: "18 Marzec 2016"
+					}, {
+						title: "Dziś kończę 6 miesięcy!",
+						description: "Uśmiechy Wam przesyłam!<br>Dobrze sobie radzę z siedzeniem, piszczę i krzyczę czasami że mamie uszy więdną. Lubię sobie gaworzyć i zjadać wszystko co wpadnie w ręce, no może oprócz jedzenia :) nie jestem jeszcze przekonana do innych smaków niż mleko mamy. Do raczkowania jeszcze mi daleko, ale technikę pełzania tyłem mam opanowaną!",
+						url: "/",
+						date: "18 Luty 2016"
+					}]
+				},
+				// components: {
+				// 	'photo': {
+				// 		template: '<div> Hello world {{ message }}</div>',
+				// 		props: ['massage']
+				// 	}
+				// }
+				methods: {
+					goToPage: function () {
+						console.log('clicked');
+						
+					}
+				}
+			});
+
+		</script>
+	</body>
+</html>
