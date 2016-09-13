@@ -225,7 +225,7 @@ body .container .b-timeline .b-timeline_content {
   margin-left: 70px;
   border: 2px solid #ACB7C0;
   border-radius: 4px;
-  padding: 1em;
+  padding: 20px;
   background: #F5EEE5;
 }
 /* line 91, ../sass/style.scss */
@@ -265,7 +265,7 @@ body .container .b-timeline .b-timeline_content:before {
   content: '';
   position: absolute;
   top: 16px;
-  right: 100%;
+  left: -15px;
   height: 0;
   width: 0;
   border: 7px solid transparent;
