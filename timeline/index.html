@@ -27,8 +27,9 @@
 				<div class="b-timeline_content clearfix2">
 					<h2>{{ title }}</h2>
 					<p>{{{ description }}}</p>
-					<a href="{{ url }}" class="read-more">Read more</a>
+					<!-- <a href="{{ url }}" class="read-more">Read more</a> -->
 					<span class="date">{{ date }}</span>
+					<!-- <img v-attr="src: photoPath" alt="photo" /> -->
 				</div> <!-- b-timeline_content -->
 			</template>
 		</div>
@@ -36,13 +37,19 @@
 		<script>
 			Vue.component('newitem', {
 				template: '#item-template',
-				props: ['title','description','url', 'date']
+				props: ['title', 'description','url', 'date', 'photoPath']
 			});
 			var vm = new Vue ({
 				el: "#myApp",
 				data: {
 					output: "Timeline - Kornelia",
 					items: [{
+						title: "13 miesięcy! :)",
+						description: "Hejoooo! <br>To znowu ja :D Kolejny miesiąc za mną! Ale się działo.. Aż nie wiem od czego zacząć..<br>Może od największej zmiany - Żłobek! Od początku września moje dni się pozmieniały.. rano wstaję, jem śniadanie i idę do „cioć” i dzieci. Na początku było mi ciężko się do tego przyzwyczaić, ale już wiem, że tam się bawię, uczę, jem i śpię a potem rodzice po mnie przychodzą. <br>Jestem małą złośnicą, muszę czasami wyładować emocje i zdarza mi się szczypać i gryźć. Ostatnio odkryłam, że można dawać jedzenie na głowę i wyrzucać je z tacki.. Nikt nie rozumie mojego odkrycia i wszyscy mówią, że tak się nie robi i „nununu” Nie rozumiem czemu.. Za każdym razem próbuję ich przekonać, że to jest fajne! Nauczyłam się też karmić lalki i misie. Ciągle wołam \"am\" do mamy. Jej mleczko jest tak pyszne, że bym tylko jadła i jadała i się do niej przytulała.<br>W tym miesiącu jechałam pierwszy raz z mamą na rowerze! To była przygoda. Założyli mi kask, ale wcale mi się nie podobał! Na szczęcie szybko mi go zdjęli.. <br>Sama wchodzę do wózeczka, który dostałam na roczek i rodzice mnie w nim wożą :D Super zabawa! Dziękuję dziadku, że mi pokazałeś, że tak można! Jak na razie najlepszym „am” na tym świecie są paluszki, a kamyczki są najfajniejszymi zabawkami! <br>Odnośnie snu to potrafię usypiać w łóżeczku, gdy mama trzyma mnie za rękę. Zasypiam też z tatą! Jest super misiem do przytulania! No i smoczek musi być.. Bez niego nie ma spania! ;) <br><br>Ściskam mocno!<br>Przesyłam trochę słonka w ten pochmurny dzień! <br>Buziaki! :*",
+						url: "/",
+						date: "18 Wrzesień 2016",
+						photoPath: "img/DSC_0225.jpg"
+					}, {
 						title: "Roczek! Dzisiaj w nocy o 00:30 skończone 12 miesięcy!",
 						description: "Mama Karolina: Dokładnie rok temu, o tej porze leżałam na szpitalnym łóżku i patrzyłam na moją malutką córeczkę. Pamiętam jakby to było wczoraj.. Nie sądziłam wtedy, że można mieć w sobie takie pokłady miłości i tak kochać małą istotkę. Dzisiaj, wiem, że można. Kocham z każdą godziną, dniem i jej uśmiechem, przyulaskiem, buziaczkiem mocniej i mocniej!<br><br>Kornelia:<br>Dzisiaj moje pierwsze urodzinki!!!!<br>Mam 6 ząbków i 3 w 'natarciu'. Stąd też moje (ostatnio częste) śpiewy indiańskie 'aaaajj jjjaaaj jjjaaajj' - tylko Wy mi możecie pomóc to przetrwać, dlatego Was nawołuję. No a mama to lekarstwo na wszystko!<br>Coraz lepiej ogarniam nocnik. Mówię bam, am, tam, mama, tata. Wołam pieska i ptaszki cmokaniem. I jak słyszę szczekanie psa to naśladuję go swoim 'aaał' :) <br>Uwielbiam kamyczki, plac zabaw i bańki mydlane! <br><br>Do zobaczenia na imprezie urodzinowej! <br>Buziaki! :*",
 						url: "/",
