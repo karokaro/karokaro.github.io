@@ -261,6 +261,11 @@ body .container .b-timeline .b-timeline_content .date {
   opacity: .7;
 }
 /* line 120, ../sass/style.scss */
+body .container .b-timeline .b-timeline_content img {
+  max-width: 100%;
+  display: block;
+}
+/* line 124, ../sass/style.scss */
 body .container .b-timeline .b-timeline_content:before {
   content: '';
   position: absolute;
@@ -278,14 +283,14 @@ body .container .b-timeline .b-timeline_content:before {
     padding: 1.6em;
     width: 40.5%;
   }
-  /* line 134, ../sass/style.scss */
+  /* line 138, ../sass/style.scss */
   body .container .b-timeline .b-timeline_content:before {
     top: 24px;
     left: 100%;
     border-color: transparent;
     border-left-color: #ACB7C0;
   }
-  /* line 140, ../sass/style.scss */
+  /* line 144, ../sass/style.scss */
   body .container .b-timeline .b-timeline_content .date {
     position: absolute;
     width: 100%;
@@ -307,20 +312,20 @@ body .container .b-timeline .b-timeline_content:before {
   }
 }
 @media (min-width: 1170px) {
-  /* line 156, ../sass/style.scss */
+  /* line 160, ../sass/style.scss */
   body .container .b-timeline:first-child {
     margin-top: 0;
     margin-bottom: 0;
   }
-  /* line 161, ../sass/style.scss */
+  /* line 165, ../sass/style.scss */
   body .container .b-timeline:last-child {
     margin-top: 0;
   }
-  /* line 164, ../sass/style.scss */
+  /* line 168, ../sass/style.scss */
   body .container .b-timeline:nth-child(even) .b-timeline_content {
     float: right;
   }
-  /* line 166, ../sass/style.scss */
+  /* line 170, ../sass/style.scss */
   body .container .b-timeline:nth-child(even) .b-timeline_content::before {
     top: 24px;
     left: auto;
@@ -328,11 +333,11 @@ body .container .b-timeline .b-timeline_content:before {
     border-color: transparent;
     border-right-color: #ACB7C0;
   }
-  /* line 173, ../sass/style.scss */
+  /* line 177, ../sass/style.scss */
   body .container .b-timeline:nth-child(even) .b-timeline_content .read-more {
     float: right;
   }
-  /* line 176, ../sass/style.scss */
+  /* line 180, ../sass/style.scss */
   body .container .b-timeline:nth-child(even) .b-timeline_content .date {
     left: auto;
     right: 122%;
