@@ -263,9 +263,21 @@ body .container .b-timeline .b-timeline_content .date {
 /* line 120, ../sass/style.scss */
 body .container .b-timeline .b-timeline_content img {
   max-width: 100%;
+  max-height: 950px;
   display: block;
 }
 /* line 124, ../sass/style.scss */
+body .container .b-timeline .b-timeline_content img.rotate {
+  margin-top: 20%;
+  margin-bottom: 13%;
+}
+/* line 129, ../sass/style.scss */
+body .container .b-timeline .b-timeline_content .rotate {
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+/* line 134, ../sass/style.scss */
 body .container .b-timeline .b-timeline_content:before {
   content: '';
   position: absolute;
@@ -283,14 +295,14 @@ body .container .b-timeline .b-timeline_content:before {
     padding: 1.6em;
     width: 40.5%;
   }
-  /* line 138, ../sass/style.scss */
+  /* line 148, ../sass/style.scss */
   body .container .b-timeline .b-timeline_content:before {
     top: 24px;
     left: 100%;
     border-color: transparent;
     border-left-color: #ACB7C0;
   }
-  /* line 144, ../sass/style.scss */
+  /* line 154, ../sass/style.scss */
   body .container .b-timeline .b-timeline_content .date {
     position: absolute;
     width: 100%;
@@ -312,20 +324,20 @@ body .container .b-timeline .b-timeline_content:before {
   }
 }
 @media (min-width: 1170px) {
-  /* line 160, ../sass/style.scss */
+  /* line 170, ../sass/style.scss */
   body .container .b-timeline:first-child {
     margin-top: 0;
     margin-bottom: 0;
   }
-  /* line 165, ../sass/style.scss */
+  /* line 175, ../sass/style.scss */
   body .container .b-timeline:last-child {
     margin-top: 0;
   }
-  /* line 168, ../sass/style.scss */
+  /* line 178, ../sass/style.scss */
   body .container .b-timeline:nth-child(even) .b-timeline_content {
     float: right;
   }
-  /* line 170, ../sass/style.scss */
+  /* line 180, ../sass/style.scss */
   body .container .b-timeline:nth-child(even) .b-timeline_content::before {
     top: 24px;
     left: auto;
@@ -333,11 +345,11 @@ body .container .b-timeline .b-timeline_content:before {
     border-color: transparent;
     border-right-color: #ACB7C0;
   }
-  /* line 177, ../sass/style.scss */
+  /* line 187, ../sass/style.scss */
   body .container .b-timeline:nth-child(even) .b-timeline_content .read-more {
     float: right;
   }
-  /* line 180, ../sass/style.scss */
+  /* line 190, ../sass/style.scss */
   body .container .b-timeline:nth-child(even) .b-timeline_content .date {
     left: auto;
     right: 122%;
