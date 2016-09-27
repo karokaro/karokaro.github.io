@@ -301,23 +301,63 @@ body .b-wrapper .header .header-note {
     line-height: 80px;
   }
 }
-/* line 94, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
+body .b-wrapper .header .header-note span.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 118, ../sass/style.scss */
 body .b-wrapper .icon-user {
   background: url(../images/i-user.png) no-repeat;
 }
-/* line 97, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 body .b-wrapper .icon-contact {
   background: url(../images/i-contact.png) no-repeat;
 }
-/* line 100, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 body .b-wrapper .icon-skills {
   background: url(../images/i-skills.png) no-repeat;
 }
-/* line 103, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 body .b-wrapper .icon-education {
   background: url(../images/i-edu.png) no-repeat;
 }
-/* line 106, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 body .b-wrapper [class^="icon-"] {
   background-size: 50px;
   width: 35px;
@@ -327,26 +367,26 @@ body .b-wrapper [class^="icon-"] {
   margin-right: 10px;
 }
 @media (min-width: 720px) {
-  /* line 106, ../sass/style.scss */
+  /* line 130, ../sass/style.scss */
   body .b-wrapper [class^="icon-"] {
     background-size: 70px;
     width: 70px;
     height: 70px;
   }
 }
-/* line 119, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 body .b-wrapper .main {
   padding: 20px;
   color: #000;
 }
 @media (min-width: 720px) {
-  /* line 124, ../sass/style.scss */
+  /* line 148, ../sass/style.scss */
   body .b-wrapper .main .main-box {
     font-size: 18px;
     line-height: 28px;
   }
 }
-/* line 129, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 body .b-wrapper .main .main-box [class^="icon-"] {
   background-size: 50px;
   width: 53px;
@@ -355,61 +395,61 @@ body .b-wrapper .main .main-box [class^="icon-"] {
   float: left;
   margin-right: 10px;
 }
-/* line 137, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 body .b-wrapper .main .main-box .note,
 body .b-wrapper .main .main-box .box-wrapper {
   padding-top: 20px;
   line-height: 30px;
   font-size: 20px;
 }
-/* line 142, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 body .b-wrapper .main .main-box .note a,
 body .b-wrapper .main .main-box .box-wrapper a {
   display: block;
 }
-/* line 145, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 body .b-wrapper .main .main-box .note a, body .b-wrapper .main .main-box .note p,
 body .b-wrapper .main .main-box .box-wrapper a,
 body .b-wrapper .main .main-box .box-wrapper p {
   margin-bottom: 10px;
 }
-/* line 148, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 body .b-wrapper .main .main-box .note .mail,
 body .b-wrapper .main .main-box .note .linkedin,
 body .b-wrapper .main .main-box .box-wrapper .mail,
 body .b-wrapper .main .main-box .box-wrapper .linkedin {
   font-weight: 800;
 }
-/* line 152, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 body .b-wrapper .main .main-box .note .category,
 body .b-wrapper .main .main-box .box-wrapper .category {
   font-size: 20px;
 }
 @media (min-width: 720px) {
-  /* line 152, ../sass/style.scss */
+  /* line 176, ../sass/style.scss */
   body .b-wrapper .main .main-box .note .category,
   body .b-wrapper .main .main-box .box-wrapper .category {
     font-size: 28px;
   }
 }
-/* line 157, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 body .b-wrapper .main .main-box .note .category.strong,
 body .b-wrapper .main .main-box .box-wrapper .category.strong {
   font-weight: 800;
 }
-/* line 161, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 body .b-wrapper .main .main-box .note .skills-row,
 body .b-wrapper .main .main-box .box-wrapper .skills-row {
   margin-bottom: 20px;
 }
 @media (min-width: 720px) {
-  /* line 161, ../sass/style.scss */
+  /* line 185, ../sass/style.scss */
   body .b-wrapper .main .main-box .note .skills-row,
   body .b-wrapper .main .main-box .box-wrapper .skills-row {
     margin-bottom: 15px;
   }
 }
-/* line 169, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 body .b-wrapper .main .sep-line {
   background-color: #90a4ae;
   height: 1px;

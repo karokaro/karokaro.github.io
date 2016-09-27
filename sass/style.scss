@@ -57,23 +57,23 @@ body {
 		.topbar {
 			background: #263238;
 			position: fixed;
-		    top: 0;
-		    left: 0;
-		    right: 0;
-		    z-index: 10000;
-		    .topbar-container {
-		    	padding-right: 15px;
-			    padding-left: 15px;
-			    margin-right: auto;
-			    margin-left: auto;
-		    }
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 10000;
+			.topbar-container {
+				padding-right: 15px;
+				padding-left: 15px;
+				margin-right: auto;
+				margin-left: auto;
+			}
 		}
 		.header {
 			background: #fff;
 			display: table-cell;
-    		vertical-align: middle;
-    		padding: 90px 20px 40px;
-    		@media (min-width: 720px) {
+			vertical-align: middle;
+			padding: 90px 20px 40px;
+			@media (min-width: 720px) {
 				padding: 150px 20px 100px;
 			}
 			.header-note {
@@ -89,7 +89,31 @@ body {
 					font-size: 70px;
 					line-height: 80px;
 				}
+				span {
+					&.typed-cursor {
+						opacity: 1;
+						-webkit-animation: blink 0.7s infinite;
+						-moz-animation: blink 0.7s infinite;
+						animation: blink 0.7s infinite;
+					}
+					@keyframes blink {
+						0% { opacity: 1; }
+						50% { opacity: 0; }
+						100% { opacity: 1; }
+					}
+					@-webkit-keyframes blink {
+						0% { opacity: 1; }
+						50% { opacity: 0; }
+						100% { opacity: 1; }
+					}
+					@-moz-keyframes blink {
+						0% { opacity: 1; }
+						50% { opacity: 0; }
+						100% { opacity: 1; }
+					}
+				}
 			}
+
 		}
 		.icon-user {
 			background: url(../images/i-user.png) no-repeat;
