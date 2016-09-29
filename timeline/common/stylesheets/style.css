@@ -363,7 +363,7 @@ body .container .b-timeline {
 /* line 245, ../sass/style.scss */
 body .container .b-timeline .b-timeline_img {
   position: absolute;
-  top: 4px;
+  top: 15px;
   left: 5px;
   width: 50px;
   height: 50px;
@@ -448,7 +448,7 @@ body .container .b-timeline .b-timeline_content img {
 body .container .b-timeline .b-timeline_content:before {
   content: '';
   position: absolute;
-  top: 16px;
+  top: 33px;
   left: -15px;
   height: 0;
   width: 0;
