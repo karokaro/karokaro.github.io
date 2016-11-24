@@ -1,0 +1,25 @@
+/**********************************************************************************************
+ *
+ * Mixins
+ * 
+ * z-index: null
+ * breakpoints: null
+ *
+ *
+***********************************************************************************************/
+
+
+@mixin wrap100 { 
+	width:100%;
+	margin:0 auto;
+}
+@mixin sprite($pos_t, $pos_l) {
+	background: url(../images/sprite.png) $pos_t + px $pos_l + px no-repeat;
+}
+
+@mixin sass-box-sizing($type) {
+	/* Acceptable values are border, content, and padding - content is the default W3C model */
+	box-sizing: #{$type}-box;
+	-webkit-box-sizing: #{$type}-box;
+	-moz-box-sizing: #{$type}-box;
+}

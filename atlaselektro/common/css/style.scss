@@ -1,0 +1,179 @@
+/**********************************************************************************************
+ *
+ * Title: Brico
+ * Author: PD/PW/ŁŚ
+ * Date: 11.2013
+ *
+ * 	1.0 Import defaults, constans, font styles, fck styles
+ * 	2.0 Import style  
+ *  
+***********************************************************************************************/
+ 
+/**********************************************************************************************
+ *
+ * 1.0 	Import defaults, mixins, fonts etc.
+ *
+***********************************************************************************************/
+  
+  
+@import "compass";  
+@import "components/enetsheet.scss";
+@import "components/mixins.scss";
+$experimental-support-for-svg: true;
+
+
+/**********************************************************************************************
+ *
+ * 2.0 	Core 
+ *
+***********************************************************************************************/
+
+
+body {
+	background: #fcfcfc;
+	font-family: "Arial";
+	font-size: 12px;
+	line-height: 17px;
+	&.home {
+		background: #fff;
+	}
+	a {
+		color: #115eaa;
+	}
+}
+
+.main_wrapper {
+	width: 100%;
+}
+.main_content {
+	width: 1000px;
+	margin: 0 auto;
+	min-height: 300px;
+	@media (max-width: 1000px) {
+		width: 94%;
+		padding: 0 3%;
+	}
+}
+
+
+/***********************************************************************************************
+ *
+ * 4.0 	Modules imports  
+ *
+***********************************************************************************************/
+
+
+//defaults   
+@import "modules/header.scss"; 
+@import "modules/footer.scss";
+
+//home
+@import "modules/home/home_top.scss";
+@import "modules/home/information.scss";
+
+
+.cms_entry {
+	padding: 35px 0 25px 0;
+	.cms_65 {
+		width: 65%;
+		float: left;
+		@media (max-width: 1000px) {
+			width: 100%;
+		}
+	}
+	.page_title {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #115eaa;
+		font-size: 38px;
+		padding-bottom: 30px;
+	}
+	p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	.cms_img {
+		float: right;
+		margin-bottom: 30px;
+		margin-top: 20px;
+		@media (max-width: 1000px) {
+			float: left;
+		}	
+	}
+	img {
+		max-width: 100%;
+	}
+}
+
+.contact_box {
+	float: left;
+	width: 420px;
+	@media (max-width: 1000px) {
+		width: 98%;
+	}
+	.hline {
+		font-size: 16px;
+		padding-bottom: 15px;
+	}
+	table {
+		width: 300px;
+		margin-bottom: 20px;
+		font-size: 14px;
+		td {
+			padding: 2px 10px 2px 0;
+		}
+	}
+	form {
+		label {
+			display: block;
+			padding: 10px 0;
+		}
+		input {
+			@include border-radius(3px);
+			border: 1px solid #ced5d9;
+			background: #fff;
+			width: 100%;
+			height: 28px;
+		}
+		textarea {
+			@include border-radius(3px);
+			border: 1px solid #ced5d9;
+			background: #fff;
+			width: 100%;
+			height: 108px;
+		}
+		.btn {
+			font-size: 14px;
+			color: #115EAA;
+			@include border-radius(3px);
+			border: 2px solid #115EAA;
+			float: left;
+			padding: 0 20px;
+			line-height: 34px;
+			float: right;
+			margin-top: 15px;
+		}
+	}
+}
+.gmaps_box {
+	float: right;
+	width: 530px;
+	@media (max-width: 1000px) {
+		width: 98%;
+		float: left;
+		padding-top: 20px;
+	}
+	iframe {
+		width: 100%;
+		clear: both;
+		overflow: hidden;
+	}
+	.hline {
+		font-size: 16px;
+		padding-bottom: 15px;
+		float: left;
+	}
+	.big_map {
+		float: right;
+	}
+}

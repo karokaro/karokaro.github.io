@@ -1,0 +1,148 @@
+.home_top {
+	width: 100%;
+	background: #e3e9ee;
+	overflow: hidden;
+	@media (max-width: 1000px) {
+		width: 96%;
+		padding: 0 2%;
+	}
+	.home_top_content {
+		width: 1000px;
+		margin: 0 auto;
+		min-height: 452px;
+		position: relative;
+		@media (max-width: 1000px) {
+			width: 100%;
+		}
+		@media (max-width: 500px) {
+			min-height:10px;
+		}
+		.panorama {
+			
+			@media (max-width: 760px) {
+				position: relative;
+				padding-top: 20px;
+				border-bottom: 1px solid #ced5d9;
+			}
+		}
+		.city_bg {
+			position: absolute;
+			bottom: 50px;
+			right: -270px;
+			@media (max-width: 1000px) {
+				right: -200px;
+			}
+			@media (max-width: 760px) {
+				position: relative;
+				right: auto;
+				left:0;
+				bottom: 0;
+				margin-top: 20px;
+			}
+		}
+		.guys {
+			z-index: 100;
+			position: absolute;
+			bottom: 0;
+			right: -10px;
+			@media (max-width: 1000px) {
+				width:60%;
+			}
+			@media (max-width: 760px) {
+				max-height: 95%;
+				width: auto;
+				right: 20%;
+			}
+			
+		}
+		.cloud {
+			position: absolute;
+			top: -120px;
+			right: -235px;
+		}
+		img {
+			max-width: 100%;
+			
+		}
+	}
+	.lead {
+		position: absolute;
+		width: 550px;
+		top: 10px;
+		left: 0;
+		@media (max-width: 1000px) {
+			width: 450px;
+		}
+		@media (max-width: 760px) {
+			width: 98%;
+			position: relative;
+			padding: 2%;
+		}
+		@media (max-width: 500px) {
+			text-align: center;
+			padding: 10px 0 20px;
+		}
+		h2 {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 28px;
+			line-height: 37px;
+			font-weight: 300;
+			color: #002751;
+			strong {
+				color: #c70025;
+			}
+			@media (max-width: 470px) {
+				font-size: 24px;
+				line-height: 32px;
+				padding: 0 10px;
+			}
+		}
+		ul {
+			margin: 25px 0;
+			list-style: disc;
+			list-style-position: inside;
+			clear: both;
+			overflow: hidden;
+			li {
+				font-size: 16px;
+				font-family: 'Open Sans', sans-serif;
+				line-height: 26px;
+				color: #002751;
+				@media (max-width: 760px) {
+					width: 50%;
+					float: left;
+				}
+				@media (max-width: 500px) {
+					width: 100%;
+					float: none;
+				}
+			}
+			@media (max-width: 760px) {
+				margin: 10px 0 25px;
+			}
+			@media (max-width: 500px) {
+				margin: 10px 0;
+			}
+		}
+	}
+	.see_more {
+		border: 2px solid #002751;
+		@include border-radius(3px);
+		text-align: center;
+		height: 33px;
+		line-height: 29px;
+		width: 135px;
+		font-family: 'Open Sans', sans-serif;
+		color: #002751;
+		font-size:18px;
+		font-weight: 600;
+		float: left;
+		margin-bottom: 20px;
+		display: block;
+		@media (max-width: 500px) {
+			float: none;
+			margin: 0 auto 20px;
+			width: 200px;
+		}
+	}
+}

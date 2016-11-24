@@ -1,0 +1,161 @@
+.header {
+	width: 100%;
+	background: #fff;
+	border-bottom: 1px solid #eee;
+	box-shadow: 0 -4px 15px #eee;
+	.header_content {
+		width: 1000px;
+		margin: 0 auto;
+		@media (max-width: 1000px) {
+			width: 96%;
+			padding: 0 2%;
+		}
+	}
+	h1 {
+		padding: 10px 0 8px;
+		float: left;
+		@media (max-width: 760px) {
+				width:150px;
+				padding-bottom: 5px;
+				padding-top: 10px;
+				padding-left: 10px;
+		}
+		img {
+			max-width: 100%;
+		}
+	}
+	
+}
+
+.home .header {
+	background: #e3e9ee;
+	border:none;
+	box-shadow: 0;
+	@media (max-width: 760px) {
+		border-bottom: 1px solid #ced5d9;
+	}
+}
+
+.top_info {
+	float: right;
+	padding-top: 15px;
+}
+
+.info_bar {
+	float: right;
+	padding-bottom: 20px;
+	@media (max-width: 760px) {
+		display: none;
+	}
+	p {
+		float: left;
+		line-height: 30px;
+		color: #555555;
+		@media (max-width: 830px) {
+			display: none;
+		}
+	}
+	.info_box {
+		float: left;
+		@include box-shadow(3px 3px 0 #ced5d9);
+		@include border-radius(3px);
+		border: 1px solid #ced5d9;
+		background: #fff;
+		padding: 5px 11px;
+		margin-left: 17px;
+		height: 18px;
+		position: relative;
+		i {
+			font-size: 16px;
+			&.icon-mobile  {
+				font-size: 21px;
+				left: 13px;
+				position: absolute;
+				top: 4px;
+			}
+		}
+	}
+}
+
+.main_menu {
+	float: right;
+	clear: both;
+	overflow: hidden;
+	padding-top: 7px;
+	@media (max-width: 760px) {
+		display: none;
+	}
+	a {
+		font-weight: 600;
+		font-size:18px;
+		float: left;
+		margin-left: 40px;
+		color: #002751;
+		font-family: 'Open Sans', sans-serif;
+		@media (max-width: 925px) {
+			margin-left: 20px;
+			font-size:16px;
+		}
+		&.active {
+			color: #115eaa;
+		}
+		&:hover {
+			color: #115eaa;
+		}
+	}
+}
+.home .main_menu {
+	padding: 0;
+}
+
+.mobile_menu {
+	display: none;
+	@media (max-width: 760px) {
+		display: block;
+	}
+	.m_menu_icons {
+		float: right;
+		margin-right: -14px;
+		a {
+			border-left: 1px solid #ced5d9;
+			border-right: 1px solid #eee;
+			display: block;
+			float: left;
+			font-size: 35px;
+			line-height: 95px;
+			padding-right: 33px;
+			padding-left: 33px;
+			color: #111;
+			@media (max-width: 360px) {
+				padding-right: 23px;
+				padding-left: 23px;
+			}
+			&:hover {
+				color: #115eaa;
+			}
+		}
+	}
+	.mob_menu {
+		display: none;
+		width: 100%;
+		clear: both;
+		overflow: hidden;
+		border-top: 1px solid #ced5d9;
+		a {
+			display: block;
+			width: 94%;
+			background: #fff;
+			padding: 12px 3%;
+			text-indent: 5px;
+			font-size: 14px;
+			border-bottom: 1px solid #eee;
+			&:last-child {
+				border: none;
+			}
+			&.active {
+				color: #C70025;
+				font-weight: bold;
+			}
+		}
+	}
+}

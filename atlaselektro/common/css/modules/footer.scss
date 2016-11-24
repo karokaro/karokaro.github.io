@@ -1,0 +1,38 @@
+.footer {
+	width: 1000px;
+	margin: 0 auto;
+	border-top: 1px #ebebeb solid;
+	padding-top: 15px;
+	padding-bottom: 35px;
+	@media (max-width: 1000px) {
+		width: 96%;
+		padding: 15px 2% 35px;
+	}
+	.copyright {
+		float: left;
+		a {
+			color: #002751;
+		}
+	}
+		.done_by {
+			float: right;
+			@media (max-width: 600px) {
+				clear: both;
+				overflow: hidden;
+				float: left;
+				padding-top: 10px;
+			}
+			p {
+				float: left;
+				line-height: 16px;
+			}
+			a {
+				background: url(../images/logo_pro.jpg) no-repeat;
+				width: 86px;
+				height: 16px;
+				display: block;
+				float: right;
+				margin-left: 5px;
+			} 
+		}
+	}
