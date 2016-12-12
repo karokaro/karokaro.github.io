@@ -1,0 +1,13 @@
+.DS_Store
+**/.sass-cache/
+**/node_modules/
+**/bower_components/
+**/output/
+
+bower_components/
+node_modules/
+dist/
+npm-debug.log
+test/unit/coverage
+test/e2e/reports
+selenium-debug.log
